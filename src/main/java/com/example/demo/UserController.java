@@ -35,7 +35,7 @@ public class UserController {
 
         Iterable<User> users = userRepository.findAll();
         for (User user: users) {
-            usersResponseList.add(new UsersResponse(user.getId(), user.getName()));
+            usersResponseList.add(new UsersResponse(user.getId(), user.getName(), user.getAge()));
         }
 
         pagingResponse.setUsersResponse(usersResponseList);

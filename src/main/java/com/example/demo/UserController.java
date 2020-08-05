@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping("/users")
-    public String getAllUser() {
-        return "Get All User";
+    public UsersResponse[] getAllUser() {
+        UsersResponse[] usersResponses = new UsersResponse[2];
+        usersResponses[0] = new UsersResponse();
+        usersResponses[1] = new UsersResponse();
+        return usersResponses;
     }
 
 }

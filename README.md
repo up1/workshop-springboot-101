@@ -2,7 +2,7 @@
 
 ```
 $gradlew
-$gradlew tesst
+$gradlew test
 $gradlew bootRun
 
 ```

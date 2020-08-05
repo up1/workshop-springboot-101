@@ -4,6 +4,11 @@ public class UsersResponse {
     private int id;
     private String name;
 
+    public UsersResponse(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     // POJO (Plain Old Java Object)
     // Getter/Setter methods
     public int getId() {
